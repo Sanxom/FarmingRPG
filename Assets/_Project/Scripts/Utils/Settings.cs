@@ -2,6 +2,11 @@ using UnityEngine;
 
 public static class Settings
 {
+    [Header("Fade Settings")]
+    public const float fadeInSeconds = 0.25f;
+    public const float fadeOutSeconds = 0.35f;
+    public const float targetAlpha = 0.45f;
+
     [Header("Player Movement")]
     public const float RUNNING_SPEED = 5.333f;
     public const float WALKING_SPEED = 2.666f;

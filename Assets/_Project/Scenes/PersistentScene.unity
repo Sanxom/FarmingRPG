@@ -1184,10 +1184,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3841086471682281467}
   - component: {fileID: 8512638692031252750}
+  - component: {fileID: 8512638692031252752}
   - component: {fileID: 2373067020869897993}
   - component: {fileID: 5277322187185714742}
   - component: {fileID: 8512638692031252751}
-  - component: {fileID: 8512638692031252752}
+  - component: {fileID: 8512638692031252753}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1574,6 +1575,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.96, y: 0.13}
   m_EdgeRadius: 0
+--- !u!114 &8512638692031252753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418718176136079522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd98360ed3bd9b42adcb7fcadfa6d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerObscuringItemFader
 --- !u!212 &8669409419866222606
 SpriteRenderer:
   serializedVersion: 2
