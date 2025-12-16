@@ -4,7 +4,7 @@ public class Item : MonoBehaviour
 {
     private SpriteRenderer _sr;
 
-    [field: SerializeField] public int ItemCode { get; set; }
+    [field: ItemCodeName][field: SerializeField] public int ItemCode { get; set; }
 
     private void Awake()
     {

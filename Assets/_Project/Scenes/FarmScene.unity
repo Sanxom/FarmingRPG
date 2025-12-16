@@ -5681,14 +5681,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1200439530}
     m_Modifications:
-    - target: {fileID: 1162823274893508228, guid: da4d4f4663a99ba4ca05b03feac7d4e9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1340714220778263278, guid: da4d4f4663a99ba4ca05b03feac7d4e9, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1945809415843441648, guid: da4d4f4663a99ba4ca05b03feac7d4e9, type: 3}
       propertyPath: m_Name
       value: BlueSpruceScenery (18)
