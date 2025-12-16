@@ -24,6 +24,7 @@ public enum ItemType
     ReapingTool,
     CollectingTool,
     ReapableScenery,
+    Furniture,
     None,
     Count
 }

@@ -160,7 +160,6 @@ public class Player : SingletonMonobehaviour<Player>
     private void PlayerMovement()
     {
         Vector2 moveVector = new(_xInput * _moveSpeed * Time.deltaTime, _yInput * _moveSpeed * Time.deltaTime);
-        print(moveVector);
         _rb.MovePosition(_rb.position + moveVector);
     }
 }
