@@ -7,7 +7,10 @@ public class ItemPickUp : MonoBehaviour
         if (collision.TryGetComponent(out Item item))
         {
             ItemDetails itemDetails = InventoryManager.Instance.GetItemDetails(item.ItemCode);
-            print(itemDetails.itemName);
+
+            if (!itemDetails.canBePickedUp) return;
+
+            InventoryManager.Instance.AddItem(InventoryLocation.Player, item, collision.gameObject);
         }
     }
 }

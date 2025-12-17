@@ -1,3 +1,10 @@
+public enum InventoryLocation
+{
+    Player,
+    Chest,
+    Count
+}
+
 public enum ToolEffect
 {
     None,

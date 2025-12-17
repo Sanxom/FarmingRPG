@@ -22,6 +22,10 @@ public static class Settings
     [Header("Shared Animation Parameters")]
     public static int idleUp, idleDown, idleLeft, idleRight;
 
+    [Header("Player Inventory")]
+    public static int playerInitialInventoryCapacity = 24;
+    public static int playerMaxInventoryCapacity = 48;
+
     static Settings()
     {
         // Player Animation Parameters

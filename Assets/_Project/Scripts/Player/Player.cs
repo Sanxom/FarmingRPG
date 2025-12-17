@@ -35,6 +35,7 @@ public class Player : SingletonMonobehaviour<Player>
     private ToolEffect _toolEffect = ToolEffect.None;
 
     private Rigidbody2D _rb;
+    private Camera _mainCamera;
     private Direction _playerDirection;
     private float _moveSpeed;
     
@@ -49,6 +50,8 @@ public class Player : SingletonMonobehaviour<Player>
         _gameInput.Enable();
         _moveAction = _gameInput.Player.Move;
         _walkAction = _gameInput.Player.Walk;
+
+        _mainCamera = Camera.main;
     }
 
     private void OnEnable()
@@ -76,6 +79,11 @@ public class Player : SingletonMonobehaviour<Player>
     private void FixedUpdate()
     {
         PlayerMovement();
+    }
+
+    public Vector3 GetPlayerViewportPosition()
+    {
+        return _mainCamera.WorldToViewportPoint(transform.position);
     }
 
     private void ResetAnimationTriggers()
